@@ -8,6 +8,11 @@ body {
   font-size: 1rem;
   padding: 0;
   margin: 0;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,6 +25,10 @@ p {
 
 *, *:before, *:after {
   box-sizing: border-box;
+}
+
+.test {
+  color: aliceblue
 }
 
 
@@ -39,6 +48,10 @@ p {
 @import "blocks/news";
 @import "blocks/articles";
 @import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-work";
+@import "blocks/timeline";
+@import "blocks/progress-bar";
 
 /* Helpers */
 @import "vars";
