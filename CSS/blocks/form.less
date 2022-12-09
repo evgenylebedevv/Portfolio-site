@@ -1,0 +1,41 @@
+.form__group {
+  margin-bottom: 1.8rem;
+}
+
+.form__input,
+.form__textarea {
+  color: @black;
+  display: block;
+  width: 100%;
+  padding: 1.2rem 1.8rem;
+  border-radius: 1.8rem;
+  font-family: inherit;
+  font-size: .8rem;
+  font-weight: normal;
+  line-height: 1.2;
+  border: solid 1px @gray-light;
+  transition: border-color linear .2s;
+
+  &:focus {
+    outline: none;
+    border-color: @gray;
+  }
+
+  &::placeholder {
+    color: @gray;
+  }
+
+}
+
+.form__textarea {
+  height: 200px;
+  resize: none;
+}
+
+.form__label {
+  display: inline-block;
+  margin-bottom: .6rem;
+  font-size: .8rem;
+  color: @black;
+  font-weight: bold;
+}

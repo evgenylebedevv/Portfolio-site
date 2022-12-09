@@ -18,6 +18,10 @@
   width: 100%;
   max-width: 1200px;
   background-color: @white;
+
+  &--sm {
+    max-width: 900px;
+  }
 }
 
 .modal__close {
@@ -37,12 +41,10 @@
   &:hover {
     transform: rotate(45deg);
   }
-
 }
 
 .modal__content {
   padding: 5rem 1rem;
-
 }
 
 .modal__title {
@@ -51,6 +53,11 @@
   text-transform: uppercase;
   color: @black;
   font-weight: bold;
-  text-align: center;
+}
 
+.modal__subtitle {
+  text-transform: uppercase;
+  font-size: 1.06rem;
+  color: @black;
+  font-weight: normal;
 }

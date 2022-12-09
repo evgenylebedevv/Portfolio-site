@@ -9,7 +9,7 @@
     <link href="CSS/style.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
-<body class="no-scroll">
+<body>
 
 <!-- Header -->
 <header class="header">
@@ -385,15 +385,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa deserunt dicta
                         doloremque eaque explicabo impedit labore nemo nesciunt nostrum obcaecati officia quo ratione
                         soluta vero vitae, voluptatum. Ab, corporis!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa deserunt dicta
-                        doloremque eaque explicabo impedit labore nemo nesciunt nostrum obcaecati officia quo ratione
-                        soluta vero vitae, voluptatum. Ab, corporis!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa deserunt dicta
-                        doloremque eaque explicabo impedit labore nemo nesciunt nostrum obcaecati officia quo ratione
-                        soluta vero vitae, voluptatum. Ab, corporis!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa deserunt dicta
-                        doloremque eaque explicabo impedit labore nemo nesciunt nostrum obcaecati officia quo ratione
-                        soluta vero vitae, voluptatum. Ab, corporis!</p>
                 </div>
                 <div class="modal-work__footer">
                     <button class="modal-work__btn" type="button">
@@ -407,13 +398,13 @@
         </div><!-- /.modal-work -->
     </div><!-- /.modal__dialog -->
 </div><!-- /.modal -->
-<div class="modal">
+<div class="modal" style="display: none">
     <div class="modal__dialog">
         <button class="modal__close" type="button">
             <img alt="Close" src="Images/modal-close.svg">
         </button>
         <div class="modal__content">
-            <h3 class="modal__title">Resume</h3>
+            <h3 class="modal__title text-center">Resume</h3>
             <div class="text-center">
                 <button class="btn btn--thin" href="#">Download pdf</button>
                 <button class="btn btn--thin" href="#">Print</button>
@@ -549,6 +540,52 @@
                 <button class="btn" href="#">Hire me</button>
             </div>
         </div><!-- /.modal-content -->
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" style="display: none">
+    <div class="modal__dialog modal__dialog--sm">
+        <button class="modal__close" type="button">
+            <img alt="Close" src="Images/modal-close.svg">
+        </button>
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title mb-0">LET'S TALK!</h3>
+                <h4 class="modal__subtitle">
+                    CALL ME OR SEND ME A REQUEST
+                </h4>
+                <ul class="contact__info">
+                    <li class="contact-info__item">
+                        <img alt="" class="contact-info__icon" src="Images/phone-thin.svg">
+                        (200) 100 3000
+                    </li>
+                    <li class="contact-info__item">
+                        <img alt="" class="contact-info__icon" src="Images/mail-thin.svg">
+                        designer@ui43.com
+                    </li>
+                </ul>
+                <form action="https://" class="form" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="Adress-email">Адрес Email</label>
+                        <input class="form__input" id="Adress-email" name="" placeholder="Адрес Email" type="text">
+                    </div>
+                </form>
+                <form action="https://" class="form" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="Input-text">Request</label>
+                        <textarea class="form__textarea" id="Input-text" name="Input-text"
+                                  placeholder="Type your request"></textarea>
+                    </div>
+                </form>
+                <div class="text-right">
+                    <button class="btn" type="submit">Send</button>
+                </div>
+
+            </div>
+            <div class="contact__right"></div>
+        </div><!-- /.contact -->
+
+
     </div><!-- /.modal__dialog -->
 </div><!-- /.modal -->
 

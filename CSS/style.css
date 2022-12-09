@@ -528,6 +528,9 @@ p {
   max-width: 1200px;
   background-color: #fff;
 }
+.modal__dialog--sm {
+  max-width: 900px;
+}
 .modal__close {
   width: 36px;
   height: 36px;
@@ -554,7 +557,12 @@ p {
   text-transform: uppercase;
   color: #2b2a2c;
   font-weight: bold;
-  text-align: center;
+}
+.modal__subtitle {
+  text-transform: uppercase;
+  font-size: 1.06rem;
+  color: #2b2a2c;
+  font-weight: normal;
 }
 .modal-work {
   display: flex;
@@ -728,6 +736,74 @@ p {
   font-size: 0.94rem;
   font-weight: lighter;
 }
+.contact {
+  display: flex;
+}
+.contact__left {
+  width: 47%;
+  padding: 2rem;
+}
+.contact__right {
+  width: 53%;
+  background: #2b2a2c url(https://via.placeholder.com/480x700) center no-repeat;
+}
+.contact__info {
+  margin: 2rem 0 3rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.94rem;
+  color: #2b2a2c;
+  font-weight: lighter;
+}
+.contact-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.contact-info__item:last-child {
+  margin-bottom: 0;
+}
+.contact-info__icon {
+  margin-right: 0.5rem;
+  width: 1rem;
+}
+.form__group {
+  margin-bottom: 1.8rem;
+}
+.form__input,
+.form__textarea {
+  color: #2b2a2c;
+  display: block;
+  width: 100%;
+  padding: 1.2rem 1.8rem;
+  border-radius: 1.8rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 1.2;
+  border: solid 1px #efefef;
+  transition: border-color linear 0.2s;
+}
+.form__input:focus,
+.form__textarea:focus {
+  outline: none;
+  border-color: #6A696B;
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: #6A696B;
+}
+.form__textarea {
+  height: 200px;
+  resize: none;
+}
+.form__label {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+  color: #2b2a2c;
+  font-weight: bold;
+}
 /* Helpers */
 .text-center {
   text-align: center;
@@ -742,5 +818,8 @@ p {
 }
 .text-left {
   text-align: left;
+}
+.mb-0 {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
