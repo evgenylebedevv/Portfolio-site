@@ -510,7 +510,7 @@ p {
   border-color: #fff;
 }
 .modal {
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -521,12 +521,17 @@ p {
   padding: 1rem;
   overflow: auto;
 }
+.modal.show {
+  display: flex;
+}
 .modal__dialog {
   position: relative;
   margin: auto;
   width: 100%;
   max-width: 1200px;
   background-color: #fff;
+  transform: rotateX(90deg);
+  transition: transform 0.2s linear;
 }
 .modal__dialog--sm {
   max-width: 900px;
@@ -821,5 +826,8 @@ p {
 }
 .mb-0 {
   margin-bottom: 0;
+}
+.hide {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
